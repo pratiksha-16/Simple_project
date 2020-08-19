@@ -1,8 +1,120 @@
-<html>
+<html lang="en">
 <head>
-	<title>Hello Everyone!!!</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<title>Sample website</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Hello Everyone!!!</h1>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left">
+						<div id="logo-img" alt="logo image"></div>
+					</a>
+
+					<form class="example" action="ghh">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+
+					<button type="button" class="navbar-toggle collapsed" data-
+					toggle="collapse" data-target="#colapsable-nav" aria-
+					expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div id="colapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="">
+								Colleges <span class="glyphicon glyphicon-chevron-down"></span>
+							</a>
+							
+							<div class="dropdown-content">
+								<a href="">Autonomous</a>
+								<a href="">Private</a>
+							</div>
+						</li>
+						<li>
+							<a href="#section1">
+								Contact us <span class="glyphicon glyphicon-earphone"></span>
+							</a>
+						</li>
+						<li>
+							<a href="example.html">
+								sign in <span class="glyphicon glyphicon-user"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="w3-content w3-section">
+		<img class="mySlides" src="../images/educational-image3.jpg" >
+		<img class="mySlides" src="../images/educational-image2.jpg">
+	</div>
+	<br>
+	<div id="home-tiles" class="container">
+		<div id="home-tiles" class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12" id="next-link"> 
+				<spam class="block-color">|</spam><a href=""> Next<span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+
+			<br>
+			<div class="col-md-4 col-xs-12 col-sm-6">
+				<a href="https://www.coep.org.in/" target="_blank">
+					<div id="College-1">
+						<span>COEP</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-12 col-sm-6">
+				<a href="https://sggs.ac.in/"  target="_blank"><div id="College-2">
+					<span>SGGS</span></div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-12 col-sm-6">
+				<a href=""  target="_blank"><div id="College-3">
+					<span>PICT</span></div>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<script>
+		var myIndex = 0;
+		carousel();
+		
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 3000);
+		}
+	</script>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/style.js"></script>
 </body>
 </html>
