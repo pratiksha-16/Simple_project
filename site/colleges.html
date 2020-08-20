@@ -60,38 +60,36 @@
 		</nav>
 	</header>
 
-	<div class="w3-content w3-section">
-		<img class="mySlides" src="../images/educational-image3.jpg" >
-		<img class="mySlides" src="../images/educational-image2.jpg">
-	</div>
-	<br>
-	<div id="home-tiles" class="container">
-		<div id="home-tiles" class="row">
-			<div class="col-md-12 col-xs-12 col-sm-12" id="next-link"> 
-				<spam class="block-color">|</spam><a href="colleges.html"> Next<span class="glyphicon glyphicon-chevron-right"></span></a>
-			</div>
+	<div id="main-content" class="container">
+		<h2 id="all-colleges-titel" class="text-center">All Colleges</h2>
 
-			<br>
+		<section class="row">
 			<div class="col-md-4 col-xs-12 col-sm-6">
 				<a href="https://www.coep.org.in/" target="_blank">
-					<div id="College-1">
+					<div id="College-2">
 						<span>COEP</span>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-4 col-xs-12 col-sm-6">
-				<a href="https://sggs.ac.in/"  target="_blank"><div id="College-2">
-					<span>SGGS</span></div>
+				<a href="https://sggs.ac.in/"  target="_blank">
+					<div id="College-2">
+						<span>SGGS</span>
+					</div>
 				</a>
 			</div>
 			<div class="col-md-4 col-xs-12 col-sm-6">
-				<a href=""  target="_blank"><div id="College-3">
-					<span>PICT</span></div>
+				<a href=""  target="_blank">
+					<div id="College-3">
+						<span>PICT</span>
+					</div>
 				</a>
 				
 			</div>
-		</div>
+		</section>
+
 	</div>
+
 
 
 	<footer class="panel-fotter">
@@ -119,22 +117,6 @@
 		</div>
 	</footer>
 
-	<script>
-		var myIndex = 0;
-		carousel();
-		
-		function carousel() {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-		  }
-		  myIndex++;
-		  if (myIndex > x.length) {myIndex = 1}    
-		  x[myIndex-1].style.display = "block";  
-		  setTimeout(carousel, 3000);
-		}
-	</script>
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
