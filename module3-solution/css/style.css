@@ -1,0 +1,104 @@
+body {
+    background-color: #D6DBDF;
+}
+
+/**Header**/
+#header-nav {
+    background-color: #5D6D7E;
+    border-radius: 0;
+    border: 0;
+}
+
+#nav-heading > span {
+    font-size: 1.8em;
+    color: black;
+}
+#menu-titel {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+#abc1 p, #abc2 p, #abc3 p {
+    position: absolute;
+    top: 20;
+    right: 0;
+    color: black;
+    padding: 10px;
+}
+
+#abc1 span, #abc2 span, #abc3 span {
+    position: absolute;
+    top: 10px;
+    bottom: 5px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    background-color: #5D6D7E;
+    color: black;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list span {
+    text-align: center;
+    color: black;
+    font-size: 1.8em;
+}
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list span:hover{
+    background: white;
+}
+
+@media (min-width: 992px) {
+    .col-md-4 {
+        float: left;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-color: #5D6D7E;;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-sm-6, .col-sm-12 {
+        float: left;
+        margin-bottom: 5px;
+        height: 550px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-color: #5D6D7E;;
+        color: black;
+        
+    }
+}
+
+@media (max-width: 767px) {
+    .col-xs-12 {
+        float: left;
+        margin-bottom: 5px;
+        height: 850px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-color: #5D6D7E;;
+        color: black;
+        margin-left: 45px;
+        margin-right: 25px;
+    }
+    .col-xs-12 {
+        width: 80%;
+    }
+}
